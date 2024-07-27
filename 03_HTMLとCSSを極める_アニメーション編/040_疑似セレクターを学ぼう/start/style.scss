@@ -1,0 +1,52 @@
+// visted, hover, focus and active
+a {
+  color: orange;
+
+  &:visited {
+    color: blue;
+  }
+
+  &:hover {
+    color: red;
+  }
+
+  &:focus {
+    color: green;
+  }
+
+  &:active {
+    color: purple;
+  }
+}
+
+// nth-child and nth-of-type
+div {
+  & span {
+    color: olive;
+
+    &:not(.cls) {
+        color: aqua; 
+    }
+
+    &:nth-child(1) { // 2n = even numbers or even, odd nubmer = (2n + 1) or odd
+      color: purple;
+    } // this deos not work for Not span as the parent is <strong> tab. nth-child is defined as child of span, so this does not apply to <strong>'s child
+
+    &:nth-of-type(1) {
+        color: purple;
+    } // this works 
+
+    &:nth-of-type(2) {
+        color: green;
+    }
+
+    &:nth-of-type(3) {
+        color: blue;
+    }
+
+    &:last-child {
+        color: orange;
+    }
+
+  }
+}
