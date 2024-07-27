@@ -1,5 +1,11 @@
+// @import "child"; not recommended (livSaas)
+@use "child" as *;
+@use "sass: math";
+
 h1 {
-    background: orange;
-    font-size: 15px;
+    background: $cOrange;
+    // font-size: 30 /2 px; (libSass) 
+    // font-size: calc(30px/2); or
+    font-size: math.div(30px, 2);
 }
 
