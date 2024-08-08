@@ -10,6 +10,8 @@ const obj = {
     }
 }
 
+// in the objec, you can replace this to obj
+
 class MyObj {
     constructor() {
         this.first_name = 'Mafia';
@@ -25,8 +27,11 @@ class MyObj {
     }
 }
 
+// in the class method, you cannot replace this because object is not created yet. 
+
 const obj2 = new MyObj();
 
 
-obj.printFullName();
+// obj.printFullName();
 obj2.printFullName();
+
