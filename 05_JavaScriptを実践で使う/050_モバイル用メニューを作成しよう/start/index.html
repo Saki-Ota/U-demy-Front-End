@@ -1,18 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <button class="mobile-menu-icon"
-    onclick="document.querySelector('body').classList.toggle('menu-open');">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="global-container">
+      <div id="container">
+        <header class="header">
+          <button
+            class="mobile-menu__btn"
+            onclick="document.querySelector('body').classList.toggle('menu-open');"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </header>
+      </div>
+      <nav class="mobile-menu">
+        <nu_main>
+          <li class="mobile-menu__item">
+            <a href="#">
+              <span class="main-title">Our service</span>
+              <span class="sub-title">About our service</span>
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#">
+              <span class="main-title">About us</span>
+              <span class="sub-title">About us</span>
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#">
+              <span class="main-title">Contact us</span>
+              <span class="sub-title">Contact form</span>
+            </a>
+          </li>
+        </nu_main>
+      </nav>
+    </div>
+  </body>
 </html>
