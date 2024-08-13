@@ -3,14 +3,19 @@
 
 
 // @media query is usually used for responsive design
-@media screen and (max-width: 600px) {
-    h1 {
-        color: red;
-    }
+// mobile first = apply mobile size css first then if the size is bigger > create a media query to control the design
+
+// mobile size design 
+h1 {
+    color: red;
+    background-color: yellow;
 }
 
+
+// change color when screen size is bigger than 601px
 @media screen and (min-width: 601px) {
     h1 {
         color: blue;
     }
 }
+
