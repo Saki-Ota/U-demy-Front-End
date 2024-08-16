@@ -1,0 +1,17 @@
+$breakpoints: (
+  // mobile phone landscape
+  "sm": "(min-width: 480px)",
+  // tablet portrait
+  "md": "(min-width: 600px)",
+  // laptop portrait
+  "lg": "(min-width: 960px)",
+  // desktop portrait
+  "xl": "(min-width: 1280px)"
+);
+
+@mixin mq($breakpoint: md) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+

@@ -1,12 +1,26 @@
-// モバイル用のスタイル
+@use "mixin" as *;
+
 h1 {
   color: red;
   background: yellow;
-}
 
-// デスクトップ用のスタイル
-@media screen and (min-width: 601px) {
-  h1 {
+  // mobile phone landscape
+  @include mq("sm") {
     color: blue;
+  }
+
+  // tablet portrait
+  @include mq("md") {
+    color: purple;
+  }
+
+  // laptop portrait
+  @include mq("lg") {
+    color: green;
+  }
+
+  // desktop portrait
+  @include mq("xl") {
+    color: orange;
   }
 }
